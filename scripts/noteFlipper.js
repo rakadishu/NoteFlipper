@@ -5,7 +5,7 @@ var noteFlipper = (function () {
 //            result = noteRegex.exec(noteContents);
             
             var resultArray = noteContents.split(noteRegex);
-            console.log(resultArray);
+            resultArray.reverse();
             
             for(var i = 0; i < resultArray.length; i++){
                 result += resultArray[i];
